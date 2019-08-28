@@ -1,0 +1,78 @@
+.userLeft {
+  width: 290px;
+  height:600px;
+  background-color: #fbfbfb;
+}
+.photobox {
+  padding: 60px 0 30px;
+}
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+}
+.userNav{
+  margin-top: 10px;
+}
+.userNav dl {
+  padding-bottom: 18px;
+}
+.userNav dt {
+  height: 50px;
+  line-height: 50px;
+  background: #ccc;
+  color: #fff;
+  padding-left: 30px;
+  font-size: 16px;
+}
+.userNav dd{
+  display: block;
+  /* margin-inline-start: 40px; */
+}
+.userNav a {
+  width:100%;
+  text-decoration: none;
+  height: 44px;
+  color: #666;
+  padding-left: 60px;
+  display: block;
+  line-height: 44px;
+  font-size: 16px;
+  margin-top: 15px;
+  box-sizing:border-box;
+}
+.userNav a i {
+  background: transparent url("/images/index/usecenter_sprite.png") no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.userNav a i.icon10 {
+  background-position: 0 0;
+}
+.userNav a:hover{
+  color:#e72f2f;
+}
+.userNav a:hover i.icon10{
+  background-position: -32px 0;
+} 
+.userNav a i.icon11 {
+  background-position: 0 -80px;
+}
+.userNav a:hover i.icon11{
+  background-position: -32px -80px;
+} 
+.userNav a i.icon12{
+  background-position: 0 -107px;
+}
+.userNav a:hover i.icon12{
+  background-position: -32px -107px;
+} 

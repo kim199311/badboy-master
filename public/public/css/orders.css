@@ -1,0 +1,137 @@
+/* 订单 */
+h2{
+  font: 13px/1.5 'Microsoft YaHei',"\5b8b\4f53";
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+}
+.userRight{
+  width: 830px;
+  color: #333;
+  margin-left:100px;
+  font: 13px/1.5 'Microsoft YaHei',"\5b8b\4f53";
+}
+.userTitle{
+  border-bottom: 1px solid #eee;
+  height: 50px;
+  display:flex;
+  margin-top:60px;
+}
+.tabs-wrap{
+  width:100%;
+  background-color: #fff;
+  list-style:none;
+}
+.mt20{
+  margin-top: 20px;
+}
+.tabs-wrap li {
+  float:left;
+  width: 33.3%;
+  text-align: center;
+}
+.tabs-wrap li a {
+  text-decoration:none;
+  outline:0;
+  display: inline-block;
+  margin: 0;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 20px;
+  border-bottom: 2px transparent solid;
+  color: #666;
+  font-size: 16px;
+}
+.tabs-wrap li .current {
+  border-color: #e72f2f;
+  color: #333;
+}
+.tablebox {
+  margin-top: 30px;
+}
+.tablebox table{
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-top: 1px solid #f5f5f5;
+}
+tr{
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+.tablebox table th {
+  background: #f5f5f5;
+  height: 36px;
+  color: #666;
+  font-weight: bold;
+  text-align: -internal-center;
+  display: table-cell;
+  vertical-align: inherit;
+}
+.tablebox .first {
+  width: 190px;
+  overflow: hidden;
+}
+.tablebox .second {
+  width: 152px;
+}
+.tablebox .third,.four,.fifth{
+  width: 88px;
+}
+.tablebox .sixth{
+  width: 92px;
+}
+.tablebox .seventh{
+  width: 98px;
+}
+.tablebox .orderlist {
+  border: 1px solid #f5f5f5;
+  background: #fff;
+  margin-top: 30px;
+}
+.tablebox .orderlist p {
+  font-weight: 400;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  color: #999;
+}
+.m_r30 {
+  margin-right: 30px;
+}
+.tablebox table td {
+  border-right: 1px solid #f5f5f5;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+}
+.tablebox table td.pad20 {
+  padding: 20px;
+}
+.tablebox table td h5 {
+  text-align: left;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  font:13px/1.5 'Microsoft YaHei',"\5b8b\4f53";
+}
+a{
+  text-decoration: none;
+  color: #666;
+  outline: 0;
+}
+a:hover{
+  color:#e72f2f;
+}
+.a-link {
+  color: #37a;
+}
+.mt5{
+  margin-top: 5px;
+}
+.orderlist>table{
+  margin-top:20px;
+}

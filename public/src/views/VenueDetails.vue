@@ -1,0 +1,690 @@
+<template>
+  <section>
+    <div class="auto venuDetails">
+      <!-- 一楼 -->
+      <div class="autoFlex firstFloor">
+        <!-- 一楼左侧演出日程 -->
+        <div class="left">
+          <div class="firstHeader">
+            <h2>日程</h2>
+            <div class="calendarTitle">
+              <span class="calendarArrow calendatPre"></span>
+              <span class="currentYear">2019年</span>
+              <span class="currentMonth">6月</span>
+              <span class="calendarArrow calendatNext"></span>
+            </div>
+          </div>
+          <table cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr class="weekHead">
+                <td><span>周一</span></td>
+                <td><span>周二</span></td>
+                <td><span>周三</span></td>
+                <td><span>周四</span></td>
+                <td><span>周五</span></td>
+                <td><span>周六</span></td>
+                <td><span>周天</span></td>
+              </tr>
+              <tr class="dateTd">
+                <td class="preMonthDay clearfix twenty-seventh">
+                  <div class="hasActivity">
+                    <span></span>
+                    <i>27</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>28</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>29</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>30</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>31</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>01</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>02</i>
+                  </div>
+                </td>
+              </tr>
+              <tr class="dateTd">
+                <td class="preMonthDay clearfix twenty-seventh">
+                  <div class="hasActivity">
+                    <span></span>
+                    <i>27</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>28</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>29</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>30</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>31</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>01</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>02</i>
+                  </div>
+                </td>
+              </tr>
+              <tr class="dateTd">
+                <td class="preMonthDay clearfix twenty-seventh">
+                  <div class="hasActivity">
+                    <span></span>
+                    <i>27</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>28</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>29</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>30</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>31</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>01</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>02</i>
+                  </div>
+                </td>
+              </tr>
+              <tr class="dateTd">
+                <td class="preMonthDay clearfix twenty-seventh">
+                  <div class="hasActivity">
+                    <span></span>
+                    <i>27</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>28</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>29</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>30</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>31</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>01</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>02</i>
+                  </div>
+                </td>
+              </tr>
+              <tr class="dateTd">
+                <td class="preMonthDay clearfix twenty-seventh">
+                  <div class="hasActivity">
+                    <span></span>
+                    <i>27</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>28</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>29</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>30</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>31</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>01</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>02</i>
+                  </div>
+                </td>
+              </tr>
+              <tr class="dateTd">
+                <td class="preMonthDay clearfix twenty-seventh">
+                  <div class="hasActivity">
+                    <span></span>
+                    <i>27</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>28</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>29</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>30</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>31</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>01</i>
+                  </div>
+                </td>
+                <td class="preMonthDay clearfix">
+                  <div>
+                    <span></span>
+                    <i>02</i>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--一楼右侧演出现场简介 -->
+        <div class="right">
+          <div class="profileimages logoimages" :style="{backgroundImage:`url(${venues_detail.vpic})`}">
+            <img :src="venues_detail.vpic" alt="">
+          </div>
+          <div class="profileInfo">
+            <i class="i-arrow"></i>
+            <div class="name">
+                {{venues_detail.vname}}
+                <span class="c-icon place-icon"></span>
+            </div>
+            <p class="proCity">城市： {{venues_detail.city}}</p>
+            <p class="add">地址： {{venues_detail.vaddress}}</p>
+          </div>
+          <div class="profileCount">
+            <div class="attention">
+              <a href=""><span></span>我要关注</a>
+            </div>
+            <div class="share">
+              <span>分享到</span>
+              <div>
+                <a href="" class="qznoe"></a>
+                <a href="" class="sina"></a>
+                <a href="" class="douban"></a>
+                <a href="" class="txwb"></a>
+                <a href="" class="qq"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 二楼 -->
+      <div class="autoFlex">
+        <div class="wrap-head">
+          <ul>
+            <li>
+              <a href="javascript:;">演出</a>
+            </li>
+            <li>
+              <a href="javascript:;">作品</a>
+            </li>
+            <li>
+              <a href="javascript:;">简介</a>
+            </li>
+          </ul>
+        </div>
+        <div class="secondFloor wrap-content clearfix">
+          <div class="left">
+            <div class="content" id="tab1">
+              <div class="group clearfix">
+                <h2>全部演出</h2>
+                <ul class="comingLists">
+                  <li v-for="(t,i) of live_list" :key="i">
+                    <router-link :to="`/live_details/${t.tid}`">
+                      <div>
+                        <img :src="t.sphoto" alt="">
+                      </div>
+                      <p class="gTitle">{{t.stitle}}--{{t.city}}</p>
+                      <p class="gName">艺人：{{t.artists}}</p>
+                      <p class="gPrice">
+                        价格：<b>¥{{t.price.toFixed(2)}}</b> 
+                      </p>
+                      <p class="gTime">时间：{{new Date(t.time).toLocaleString()}}</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [{{t.city}}]{{t.vname}}
+                      </p>
+                    </router-link>
+                  </li>
+                  <!--<li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div>
+                        <img src="images/live/nlive01.jpg" alt="">
+                      </div>
+                      <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+                      <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+                      <p class="gPrice">
+                        价格：<b>¥480-1180</b> 
+                      </p>
+                      <p class="gTime">时间：2019/06/15 14:30</p>
+                      <p class="gPlace">
+                        <span></span>
+                        [北京]北京 世纪剧院
+                      </p>
+                    </a>
+                  </li>-->
+                </ul>
+                <div class="more">
+                  <a href="">查看更多</a>
+                </div>
+              </div>
+            </div>
+            <div class="content" id="tab1" style="display:none;">
+              <div class="group">
+                <h2>简介</h2>
+                <p class="mt20">
+                  蘑菇空间被乐迷誉为北京最好看的现场音乐主题店。
+                  <br>
+                  蘑菇空间成立于2016年，位于北京西直门，专注于独立音乐现场交流。
+                  <br>
+                  每周二~周日为独立音乐现场，每周一喜剧之夜。
+                  <br>蘑菇空间也开设吉他课，古汉隶书法课。
+                  <br>这里有最好听的独立音乐，最近距离的迷你现场。
+                  <br>地址：西直门交大东路66号&lt;钻河中心&gt;2号楼一楼东侧102 物美往里50米
+                  <br>
+                  电话：62249830  微信：13651253655
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="fans">
+              <div class="fansHead">关注场地的成员(<span>28853</span>)</div>
+              <div class="fansList">
+                <a href="">
+                  <img src="images/index/fans001.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="images/index/fans001.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="images/index/fans001.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="images/index/fans001.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="images/index/fans001.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="images/index/fans001.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="images/index/fans001.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="images/index/fans001.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="images/index/fans001.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="images/index/fans001.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="around">
+              <h3>你可能还想了解</h3>
+              <ul>
+                <li>
+                  <a href="" class="clearfix">
+                    <span class="bg">
+                      <img src="images/index/fans002.jpg" alt="">
+                      <span></span>
+                    </span>
+                    <span class="aboutName">耳光乐队</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="clearfix">
+                    <span class="bg">
+                      <img src="images/index/fans002.jpg" alt="">
+                      <span></span>
+                    </span>
+                    <span class="aboutName">耳光乐队</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="bg">
+                      <img src="images/index/fans002.jpg" alt="">
+                      <span></span>
+                    </span>
+                    <span class="aboutName">耳光乐队</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+<script>
+export default {
+  data(){
+    return {
+      venues_detail:{},   //现场详情
+      vid:"",
+      pno:"",
+      psize:"",
+      live_list:{}   //现场相关演出列表
+    }
+  },
+  props:["vid"],
+  created(){
+    //即将上演
+    this.axios.get(
+      "venues/details",
+      {
+        params:{vid:this.vid}
+      }
+    ).then(result=>{
+      this.venues_detail=result.data;
+      console.log(result.data);
+    }),
+    // /tours/list/?vid=现场编号&pno=页码&psize=每页条目数
+    this.axios.get(
+      "tours/list",
+      {
+        params:{
+          vid:this.vid,
+          pno:this.pno,
+          psize:this.psize
+          }
+      }
+    ).then(result=>{
+      this.live_list=result.data.result;
+      console.log(result.data.result);
+    })
+  }
+}
+</script>
+<style scoped src="../../public/css/venueDetails.css">
+</style>

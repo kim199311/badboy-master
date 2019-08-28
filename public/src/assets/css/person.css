@@ -1,0 +1,11 @@
+section{
+  margin-top:60px;
+  font: 13px/1.5 'Microsoft YaHei',"\5b8b\4f53";
+  color: #666;
+}
+  .auto-width {
+  width: 1200px;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-between;
+}

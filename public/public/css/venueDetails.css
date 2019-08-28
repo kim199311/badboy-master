@@ -1,0 +1,497 @@
+section {
+  width:100%;
+  height: auto;
+}
+ .auto{
+  width:1200px;
+  margin:0 auto;
+  margin-top:100px;
+}
+ .firstFloor,.secondFloor{
+  display:flex;
+  justify-content: space-between;
+}
+ .left{
+  width:820px;
+}
+ .right{
+  width:320px;
+}
+ .firstFloor>div{
+  height:580px;
+}
+/* 一楼左侧日历头部 */
+ .firstHeader{
+  display:flex;
+  justify-content:space-between;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom:20px;
+}
+ .firstHeader>h2{
+  padding-left: 10px;
+  border-left: 4px #e72f2f solid;
+  color: #333333;
+  font-size:18px;
+  font-weight:normal;
+}
+ .calendarArrow{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+  width: 24px;
+  height: 24px;
+  background: url("/images/index/droll-icon.png") no-repeat;
+}
+ .calendatPre{
+  background-position: -127px 0;
+}
+ .calendatNext{
+  background-position: -127px -40px;
+}
+ .currentYear,.currentMonth {
+  color: #e72f2f;
+  font-size: 20px;
+  vertical-align: top;
+}
+/* 一楼日历左侧table */
+ .autoFlex table{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px #eee solid;
+}
+ tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+ .venuDetails .firstFloor .weekHead td {
+  padding: 0 0 16px 0;
+  border: none;
+  background-color: #fff;
+  margin-right: -1px;
+  vertical-align: middle;
+}
+ .venuDetails .firstFloor td span {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+ .venuDetails .firstFloor .weekHead td span {
+  padding: 0;
+  border: 0;
+  height: 35px;
+  line-height: 35px;
+  display: block;
+  background-color: #f8f8f8;
+}
+ .venuDetails .firstFloor .dateTd .twenty-seventh{
+  background: url("/images/show_performance/venue01.jpg");
+}
+ .venuDetails .firstFloor .dateTd td.preMonthDay{
+  cursor: pointer;
+  background-color: #f8f8f8;
+  color: #999;
+  width:117px;
+  height:81px;
+  position:relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+}
+ .venuDetails .dateTd td i {
+  font-size: 14px;
+  font-style: normal;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+ .venuDetails .dateTd td .hasActivity>i{
+  color:#fff;
+}
+ .venuDetails .firstFloor td div {
+  display: block;
+  border-top: 1px #eee solid;
+  border-left: 1px #eee solid;
+  border-right: 1px #eee solid;
+  height: 80px;
+  margin-left: -1px;
+  position: relative;
+}
+ .venuDetails .firstFloor  td div span{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+ .venuDetails .firstFloor  td .hasActivity span{
+  color: #fff;
+  background: #333;
+  opacity: .7;
+  background: -webkit-gradient(linear,0 0,0 bottom,from(rgba(102,102,102,.52)),to(#000));
+}
+/*一楼右侧 */
+ .firstFloor>.right>.profileimages{
+  width: 100%;
+  height: 220px;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(255,255,255,.8);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ /* .logoimages{
+  background-image: url("/images/show_performance/01MoguSpace.jpg");
+} */
+ .logoimages>img{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-top: 55px;
+}
+ .profileInfo{
+  width: auto;
+  height: 146px;
+  padding: 20px;
+  background-color: #feda22;
+  position:relative;
+  color: #333;
+}
+ .profileInfo  .i-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px #ffd604 solid;
+  border-color: transparent rgba(255,214,4,.9) transparent transparent;
+  border-color: transparent #ffd604 transparent transparent\9;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+}
+ .profileInfo .i-arrow {
+  top: -10px;
+  left: 50%;
+  margin-left: -10px;
+  border-color: transparent transparent #feda22 transparent;
+}
+ .profileInfo .name {
+  margin-top: 0;
+  text-align: center;
+  font-size: 20px;
+}
+ .c-icon {
+  display:inline-block;
+  width: 25px;
+  height: 25px;
+  right: 0;
+  bottom: 0;
+  background: url("/images/index/icon.png") no-repeat;
+  vertical-align: middle;
+}
+ .place-icon{
+  background-position: -54px -79px;
+}
+ .profileInfo .proCity{
+  margin-top:20px;
+} 
+ .profileCount{
+  text-align:center;
+  /* margin:0 auto; */
+}
+ .profileCount>.attention{
+  margin-top:50px;
+}
+ .profileCount>.attention>a{
+  text-decoration:none;
+  display:inline-block;
+  width:126px;
+  height:32px;
+  border:2px solid #e72f2f;
+  color:#e72f2f;
+  padding:0 25px;
+  line-height:32px;
+  border-radius:30px;
+}
+ .profileCount>.attention>a>span{
+  display:inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: url("/images/index/icon.png") -245px -516px no-repeat;
+}
+ .profileCount>.share{
+  margin-top:30px;
+  display:flex;
+  padding:0 55px;
+}
+ .profileCount>.share>span{
+  margin-right:20px;
+  display:inline-block;
+  height:24px;
+  line-height:24px;
+  font-size:14px;
+}
+ .profileCount>.share>div>a{
+  display:inline-block;
+  width:24px;
+  height:24px;
+  margin-right:5px;
+  text-decoration: none;
+  outline: 0;
+  background: url("/images/index/share-icon.png") -171px 0 no-repeat;
+}
+ .profileCount>.share>div>a.sina{
+  background-position:-1px  0 !important;
+}
+ .profileCount>.share>div>a.douban{
+  background-position:-137px 0 !important;
+}
+ .profileCount>.share>div>a.txwb{
+  background-position:-205px 0 !important;
+}
+ .profileCount>.share>div>a.qq{
+  background-position:-35px 0 !important;
+}
+.secondFloor{
+  margin-top:20px;
+}
+.wrap-head{
+  width:100%;
+  padding:0;
+  margin:0;
+  border-bottom:1px solid #eee;
+}
+.wrap-head>ul{
+  width:1200px;
+  margin:0 auto;
+  height:58px;
+}
+.wrap-head>ul>li{
+  margin-right:50px;
+}
+.wrap-head>ul>li>a{
+  text-decoration:none;
+  display:inline-block;
+  width:58px;
+  line-height:58px;
+  font-size:16px;
+  text-align:center;
+  color:#666666;
+}
+.wrap-head>ul>li>a:hover{
+  border-bottom:1px solid #333;
+  background-color:rgba(255,214,4,.9);
+  color:#e72f2f;
+}
+/* 现场相关演出 */
+ .secondFloor .content>div>h2{
+  padding-left: 10px;
+  border-left: 4px #e72f2f solid;
+  height: 20px;
+  line-height: 20px;
+  color: #333333;
+  font-size:18px;
+  font-weight:normal;
+}
+ .content>.group{
+  width:820px;
+}
+/* tab1 演出 */
+ .secondFloor ul.comingLists{
+  margin-top:20px;
+  display:flex;
+  list-style:none;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+ .secondFloor ul.comingLists>li{
+  width:195px; 
+  height:430px;
+  border:1px solid #eee;
+  margin-bottom:30px;
+}
+ .secondFloor ul.comingLists>li>a{
+  text-decoration:none;
+  display:block;
+  width:195px; 
+  height:430px;
+  box-sizing:border-box;
+  /* border: 1px #ddd solid; */
+  border-radius: 4px;
+  padding: 10px;
+  color:#666666;
+  font-size:13px;
+}
+ .secondFloor ul.comingLists>li>a>div{
+  text-align: center;
+  height: 255px;
+  /* border:1px solid #f00; */
+}
+ ul.comingLists>li>a>div>img{
+  width:100%;
+  height:100%;
+}
+ .secondFloor ul.comingLists>li>a>p/* :not(first-child)*/{ 
+  padding:0;
+  margin:0;
+  height:19px;
+  color: #666;
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ .secondFloor ul.comingLists>li>a>p.gTitle{
+  width:100%;
+  margin-top: 15px;
+  height: 38px;
+  line-height: 19px;
+  overflow: hiddle;
+  white-space: pre-wrap;
+}
+ .secondFloor ul.comingLists>li>a:hover>p.gTitle{
+  color:#e72f2f;
+}
+ .secondFloor ul.comingLists>li>a>p.gPrice>b{
+  font-weight: bold;
+  color:#e72f2f;
+}
+ .secondFloor ul.comingLists>li>a>p.gPlace>span{
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  background: url(/images/index/icon.png) 0 -343px no-repeat;
+}
+ .secondFloor ul.comingLists>li>a>p.gPlace{
+  color:#37a;
+}
+ .more{
+  margin:20px 0 10px;
+  text-align:center;
+}
+ .more>a{
+  display:inline-block;
+  text-decoration:none;
+  border:1px solid #e72f2f;
+  color:#e72f2f;
+  font-size:13px;
+  width:104px;
+  height:34px;
+  line-height:34px;
+  font-size:13px;
+  border-radius:5px;
+}
+/* 二楼右侧 */
+ .fans{
+  width:320px;
+  height:173px;
+  /* margin-top:30px; */
+  border-bottom:1px solid #eee;
+}
+ .fans>.fansHead{
+  padding:10px;
+  height:27px;
+  display:inline-block;
+  font-size:18px;
+  color:#333;
+}
+.fans>.fansHead>span{
+  color:#e72f2f;
+}
+.fans>.fansList{
+  width:320px;
+  height:110px;
+  /* padding-left:5px; */
+  text-align:center;
+  box-sizing:border-box;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+.fans>.fansList>a{
+  display:inline-block;
+  text-decoration:none;
+  width:40px;
+  height:40px;
+  margin:5px 12px 0;
+}
+.fans>.fansList>a>img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+.around{
+  margin-top:30px;
+}
+.around>h3{
+  font-size: 18px;
+  color: #333;
+  margin-left:10px;
+}
+.around>ul{
+  width:320px;
+  display:flex;
+  flex-wrap:wrap;
+  list-style:none;
+}
+.around>ul>li{
+  width:320px;
+  height:60px;
+  padding:0;
+  padding:12px 2px;
+  vertical-align: middle;
+  /* background-color:#f8f8f8; */
+  margin-bottom:26px;
+}
+.around>ul>li>a{
+  text-decoration:none;
+  text-align:none;
+  display:inline-block;
+  height:83px;
+  width:100%;
+  padding:10px 0;
+  line-height:60px;
+}
+.around>ul>li>a>span{
+  display:inline-block;
+  width:60px;
+  height:60px;
+  line-height:60px;
+  position:relative;
+  vertical-align: center;
+}
+.around>ul>li>a>span.bg>img{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+}
+.around>ul>li>a>span.bg>span{
+  position:absolute;
+  display:inline-block;
+  width: 25px;
+  height: 25px;
+  right: 0;
+  bottom: 0;
+  background: url("/images/index/icon.png") no-repeat;
+  background-position: 0 -79px;
+}
+.around>ul>li>a>span.aboutName{
+  width:100px;
+  float:right;
+  margin-right:120px;
+  font-weight:bold;
+  font-size:15px;
+  color:#666;
+}
+.around>ul>li>a:hover>span.aboutName{
+  color:#e72f2f;
+}
+.around>ul>li>a:hover{
+  background-color:#f8f8f8;
+  background-color:#F8F8F8;
+  background-color:rgba(255,214,4,.9);
+}
+.mt20{
+  margin-top:20px;
+}

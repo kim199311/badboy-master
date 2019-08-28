@@ -1,0 +1,446 @@
+/*body{
+  padding: 0;
+  margin: 0;
+  font: 13px/1.5 'Microsoft YaHei',"\5b8b\4f53";
+  color: #666;
+}*/
+/* section{
+  width:1200px;
+  margin:100px auto 0;
+  margin-bottom:100px;
+  font: 13px/1.5 'Microsoft YaHei',"\5b8b\4f53";
+  color: #666;
+} */
+.hr{
+  border:1px solid #eee;
+  margin-bottom:50px;
+} 
+.artistProfile{
+  margin-top:15px;
+}
+section div.artHead{
+  width:1200px;
+  margin:0 auto;
+  height:220px;
+  display:flex;
+  justify-content: space-between;
+  /* background:#F8F8F8; */
+}
+section div.artHead>.artPhoto{
+  width: 312px;
+  height: 220px;
+}
+.artHead>.artPhoto>img{
+  width:312px;
+  height:220px;
+}
+.artHead>.artDesc{
+  background: rgba(255,214,4,.9);
+  padding: 0 40px;
+  height: 220px;
+  width: 488px;
+  position: relative;
+  color: #333;
+}
+.artHead>.artDesc>.arrow{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px #ffd604 solid;
+  border-color: transparent rgba(255,214,4,.9) transparent transparent;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+}
+.artHead>.artDesc>h1{
+  margin-top:50px;
+  font-size:24px;
+}
+.artHead>.artDesc>h1>span{
+  display:inline-block;
+  width: 28px;
+  height: 28px;
+  margin-left:5px;
+  background: url("/images/index/icon.png") no-repeat;
+  background-position: 0 -75px;
+}
+.artHead>.artDesc>p{
+  margin-top:30px;
+}
+.artHead>.artFans{
+  margin:0 auto;
+  text-align:center;
+}
+.artHead>.artFans>.attention{
+  margin:0 auto;
+  margin-top:50px;
+}
+.artHead>.artFans>.attention>a{
+  text-decoration:none;
+  display:inline-block;
+  width:143px;
+  height:32px;
+  border:2px solid #e72f2f;
+  color:#e72f2f;
+  padding:0 25px;
+  line-height:32px;
+  border-radius:30px;
+}
+.artHead>.artFans>.attention>a>span{
+  display:inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: url("/images/index/icon.png") -245px -516px no-repeat;
+}
+.artHead>.artFans>.share{
+  margin:0 auto;
+  margin-top:50px;
+  display:flex;
+}
+.artHead>.artFans>.share>span{
+  margin-right:20px;
+  display:inline-block;
+  height:24px;
+  line-height:24px;
+  font-size:14px;
+}
+.artHead>.artFans>.share>div>a{
+  margin-right:10px;
+  display:inline-block;
+  width:24px;
+  height:24px;
+  text-decoration: none;
+  outline: 0;
+  background: url("/images/index/share-icon.png") -171px 0 no-repeat;
+}
+.artHead>.artFans>.share>div>a.sina{
+  background-position:-1px  0 !important;
+}
+.artHead>.artFans>.share>div>a.douban{
+  background-position:-137px 0 !important;
+}
+.artHead>.artFans>.share>div>a.txwb{
+  background-position:-205px 0 !important;
+}
+.artHead>.artFans>.share>div>a.qq{
+  background-position:-35px 0 !important;
+}
+/* 艺人详情页 */
+.detailWrap{
+  margin-top:50px;
+}
+.detailWrap>.wrap-head{
+  width:100%;
+  padding:0;
+  margin:0;
+  border-bottom:1px solid #eee;
+}
+.detailWrap>.wrap-head>ul{
+  width:1200px;
+  margin:0 auto;
+  height:58px;
+}
+.detailWrap>.wrap-head>ul>li{
+  margin-right:50px;
+}
+.detailWrap>.wrap-head>ul>li>a{
+  text-decoration:none;
+  display:inline-block;
+  width:58px;
+  line-height:58px;
+  font-size:16px;
+  text-align:center;
+  color:#666666;
+}
+.detailWrap>.wrap-head>ul>li>a:hover{
+  border-bottom:1px solid #333;
+  background-color:rgba(255,214,4,.9);
+  color:#e72f2f;
+}
+.detailWrap>.wrap-content{
+  width:1200px;
+  margin:0 auto;
+  margin-top:30px;
+  display:flex;
+  justify-content: space-between;
+}
+.detailWrap>.wrap-content>.itemLeft{
+  width:820px;
+}
+.detailWrap>.wrap-content>.itemRight{
+  width:320px;
+  /* height:918px; */
+}
+.content>div>h2{
+  padding-left: 10px;
+  border-left: 4px #e72f2f solid;
+  height: 20px;
+  line-height: 20px;
+  color: #333333;
+  font-size:18px;
+  font-weight:normal;
+}
+.content>.group{
+  width:820px;
+}
+/* tab1 演出 */
+ul.comingList{
+  margin-top:20px;
+  display:flex;
+  list-style:none;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+ul.comingList>li{
+  width:195px; 
+  height:430px;
+  border:1px solid #eee;
+  margin-bottom:30px;
+}
+ul.comingList>li>a{
+  text-decoration:none;
+  display:block;
+  width:195px; 
+  height:430px;
+  box-sizing:border-box;
+  /* border: 1px #ddd solid; */
+  border-radius: 4px;
+  padding: 10px;
+  color:#666666;
+  font-size:13px;
+}
+ul.comingList>li>a>div{
+  text-align: center;
+  height: 255px;
+  /* border:1px solid #f00; */
+}
+ul.comingList>li>a>div>img{
+  width:100%;
+  height:100%;
+}
+ul.comingList>li>a>p/* :not(first-child)*/{ 
+  padding:0;
+  margin:0;
+  height:19px;
+  color: #666;
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ul.comingList>li>a>p.gTitle{
+  width:100%;
+  margin-top: 15px;
+  height: 38px;
+  line-height: 19px;
+  overflow: hiddle;
+  white-space: pre-wrap;
+}
+ul.comingList>li>a:hover>p.gTitle{
+  color:#e72f2f;
+}
+ul.comingList>li>a>p.gPrice>b{
+  font-weight: bold;
+  color:#e72f2f;
+}
+ul.comingList>li>a>p.gPlace>span{
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  background: url(/images/index/icon.png) 0 -343px no-repeat;
+}
+ul.comingList>li>a>p.gPlace{
+  color:#37a;
+}
+.more{
+  margin:20px 0 10px;
+  text-align:center;
+}
+.more>a{
+  display:inline-block;
+  text-decoration:none;
+  border:1px solid #e72f2f;
+  color:#e72f2f;
+  font-size:13px;
+  width:104px;
+  height:34px;
+  line-height:34px;
+  font-size:13px;
+  border-radius:5px;
+}
+/* tab2艺人详细简介 */
+#tab2>.group>p{
+  margin-top:20px;
+}
+#tab2>.group>h2.imgTitle{
+  margin-top:50px;
+  margin-bottom:30px;
+}
+#tab2>.group>ul{
+  width:820px;
+  list-style:none;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  padding:0;
+  margin:0;
+}
+#tab2>.group>ul>li{
+  width:158px;
+  height:158px;
+  margin-bottom:10px;
+}
+#tab2>.group>ul>li>a{
+  text-decoration:none;
+  display:inline-block;
+  width:100%;
+  height:100%;
+}
+#tab2>.group>ul>li>a>img{
+  width:100%;
+  height:100%;
+}
+/* 右侧 */
+.itemRight>.tag{
+  width:320px;
+  height:105px;
+  box-sizing:border-box;
+  padding:0 20px;
+  border:6px solid #eee;
+}
+.itemRight>.tag>h3{
+  font-size: 16px;
+  color: #333;
+  font-weight: 100;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px #ddd solid;
+}
+.itemRight>.tag>h3>i{
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: url("/images/index/icon.png") no-repeat;
+  margin-right: 5px;
+}
+.itemRight>.tag>div{
+  margin-top:10px;
+}
+.itemRight>.tag>div>a{
+  text-decoration:none;
+  color:#37a;
+}
+.itemRight>.tag>div>a:hover{
+  color:#e72f2f;
+}
+.itemRight>.fans{
+  width:320px;
+  height:173px;
+  margin-top:30px;
+  border-bottom:1px solid #eee;
+}
+.fans>.fansHead{
+  padding:10px;
+  height:27px;
+  display:inline-block;
+  font-size:18px;
+  color:#333;
+}
+.fans>.fansHead>span{
+  color:#e72f2f;
+}
+.fans>.fansList{
+  width:320px;
+  height:110px;
+  /* padding-left:5px; */
+  text-align:center;
+  box-sizing:border-box;
+  display:flex;
+  flex-wrap:wrap;
+}
+.fans>.fansList>a{
+  display:inline-block;
+  text-decoration:none;
+  width:40px;
+  height:40px;
+  margin:5px 12px 0;
+}
+.fans>.fansList>a>img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+.around{
+  margin-top:30px;
+}
+.around>h3{
+  font-size: 18px;
+  color: #333;
+  margin-left:10px;
+}
+.around>ul{
+  width:320px;
+  display:flex;
+  flex-wrap:wrap;
+  list-style:none;
+}
+.around>ul>li{
+  width:320px;
+  height:60px;
+  padding:0;
+  padding:12px 2px;
+  vertical-align: middle;
+  /* background-color:#f8f8f8; */
+  margin-bottom:26px;
+}
+.around>ul>li>a{
+  text-decoration:none;
+  text-align:none;
+  display:inline-block;
+  height:83px;
+  width:100%;
+  padding:10px 0;
+  line-height:60px;
+}
+.around>ul>li>a>span{
+  display:inline-block;
+  width:60px;
+  height:60px;
+  line-height:60px;
+  position:relative;
+  vertical-align: center;
+}
+.around>ul>li>a>span.bg>img{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+}
+.around>ul>li>a>span.bg>span{
+  position:absolute;
+  display:inline-block;
+  width: 25px;
+  height: 25px;
+  right: 0;
+  bottom: 0;
+  background: url("/images/index/icon.png") no-repeat;
+  background-position: 0 -79px;
+}
+.around>ul>li>a>span.aboutName{
+  width:100px;
+  float:right;
+  margin-right:120px;
+  font-weight:bold;
+  font-size:15px;
+  color:#666;
+}
+.around>ul>li>a:hover>span.aboutName{
+  color:#e72f2f;
+}
+.around>ul>li>a:hover{
+  background-color:#f8f8f8;
+  background-color:#F8F8F8;
+  background-color:rgba(255,214,4,.9);
+}

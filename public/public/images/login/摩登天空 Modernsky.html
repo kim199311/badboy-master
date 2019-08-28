@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0051)http://buy.modernsky.com/index.php/Login/login.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>摩登天空 Modernsky</title>
+    <link rel="stylesheet" type="text/css" href="./摩登天空 Modernsky_files/css.css">
+    <link rel="stylesheet" type="text/css" href="./摩登天空 Modernsky_files/default.css">
+	<link rel="stylesheet" type="text/css" href="./摩登天空 Modernsky_files/new_css.css">
+
+    <script src="./摩登天空 Modernsky_files/hm.js"></script><script src="./摩登天空 Modernsky_files/jq.js"></script>
+    <script src="./摩登天空 Modernsky_files/default.js"></script>
+    <!-- <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            $("#form_login").submit(function () { 
+                var account = $("input[name='account']").val();
+                var password = $("input[name='password']").val();
+                var after_url = $("input[name='after_url']").val();
+                //var hash = $("input[name='__hash__']").val();
+                $.post("/index.php/Login/dologin", { after_url:after_url,account: account, password: password},
+                        function (data) {
+                            if(data.data==99){
+								$('#account').css('color','red');
+								$('#account').text(data.info);
+							}
+							if(data.data==2){
+								$('#password').css('color','red');
+								$('#password').text(data.info);
+							}
+                            if(data.data==1){
+                                $('#account').css('color','red');
+                                $('#account').text(data.info);
+                            }
+							if(data.data==3){
+								$('#account').css('color','red');
+								$('#account').text(data.info);
+							}
+							if(data.data==100){
+								location.href = after_url;
+							}
+                        }, "json");
+                return false;
+            });
+
+
+			
+        });
+    </script>
+
+</head><body>
+<!--导入导航-->
+	<script>
+		 $(document).ready(function(){
+			function getOs()  
+			{  
+				var OsObject = "";  
+			   if(navigator.userAgent.indexOf("MSIE")>0) {  
+					//<link rel="stylesheet" type="text/css" href="/Index/Public/css/ie.css"/>
+					function loadCss() {  
+					var link = document.createElement("link");  
+					link.rel = "stylesheet";  
+					link.type = "text/css";  
+					link.href = "/Index/Public/css/ie.css";  
+					document.getElementsByTagName("head")[0].appendChild(link);
+					}
+					loadCss();
+				}  
+			} 
+			getOs();
+		}); 
+	</script>
+<!-- 导航 -->
+<div id="navPage">
+    <div class="pad">
+        <a href="http://buy.modernsky.com/" class="nLogo" title="摩登天空"><img src="./摩登天空 Modernsky_files/logo.png" class="logoImg"></a>
+
+        <div class="navBox">
+            <ul style="display:block; float:left">
+                                    <li>                    <a href="http://buy.modernsky.com/index.php/News/index.html">
+                        
+                        <span>新闻</span>
+                    </a>
+                </li>
+				                    <li>                    <a href="http://buy.modernsky.com/index.php/Records/index.html">
+                        
+                        <span>唱片</span>
+                    </a>
+                </li>
+                                    <li>                    <a href="http://buy.modernsky.com/index.php/Artists/type/id/1.html">
+                        
+                        <span>艺人</span>
+                    </a>
+                </li>
+                                    <li>                    <a href="http://buy.modernsky.com/index.php/Live/index.html">
+                        
+                        <span>演出</span>
+                    </a>
+                </li>
+                                    <li>                    <a href="http://buy.modernsky.com/index.php/Festival/index.html">
+                        
+                        <span>音乐节</span>
+                    </a>
+                </li>
+                                    <li>                    <a href="http://buy.modernsky.com/index.php/Lab/index.html">
+                        
+                        <span>Modernsky Lab</span>
+                    </a>
+                </li>
+				                     <li>                    <a href="http://buy.modernsky.com/index.php/About/index/id/3.html">
+                        
+                        <span>关于摩登</span>
+                    </a>
+                </li>
+            </ul>
+                 <div class="clear"></div>
+             </div>
+             <div class="user">
+				<ul class="login">
+					<!--
+					<li>
+						   <span class="line">|</span> 
+					</li>
+					-->
+
+											<li>
+							<a href="http://buy.modernsky.com/index.php/Login/login.html">
+								<span>登录</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://buy.modernsky.com/index.php/Login/reg.html">
+								<span>注册</span>
+							</a>
+						</li>
+				</ul>
+				<div class="search">
+					 <form method="post" action="http://buy.modernsky.com/index.php/Search/index.html" style="height:30px;">
+					 <input name="search" class="term" type="text" size="22">
+					 <input class="seek" type="submit">
+					 </form>
+					 <!--<input type="button" class="nsBtn"/>
+					 <a href="/index.php/User/index.html" title="用户中心"><img src="/Index/Public/img/icon/icon_user.png" class="userImg"/></a>
+					 <a href="/index.php/Buy/cart.html" title="购物车"><img src="/Index/Public/img/icon/icon_cart.png" class="cartImg"/></a>
+					 <a href="" title="帮助"><img src="/Index/Public/img/icon/icon_qanda.png" class="qandaImg"/></a> -->
+				</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="defBox">
+    <div id="defL">
+        <div class="ns">
+            <div class="defTit">
+                <img src="./摩登天空 Modernsky_files/title_membercenter.png">
+            </div>
+
+
+                            <ul class="aboutUl nonehover">
+                    <li class="aboutNo"><p><img src="./摩登天空 Modernsky_files/title_profilegray.png"></p></li>
+                    <li class="aboutNo"><p><img src="./摩登天空 Modernsky_files/title_passwordgray.png"></p></li>
+                    <li class="aboutNo"><p><img src="./摩登天空 Modernsky_files/title_deliveryaddressgray.png"></p></li>
+                    <li class="aboutNo"><p><img src="./摩登天空 Modernsky_files/title_identitiesgray.png"></p></li>
+                    <div class="clear"></div>
+                </ul>				
+
+            </div>
+        </div>
+	</div>
+    
+	<div id="defR">
+        <div class="e_add">
+            <div class="orderInfo">
+                <div class="defTit">
+                    <img src="./摩登天空 Modernsky_files/title_login.png">
+                </div>
+                <div class="info">
+                    <form id="form_login" method="post">
+                        <input type="hidden" name="after_url" value="http://buy.modernsky.com/index.php/Login/reg.html">
+                        <!-- <input type="hidden" name="__hash__" value="3c1b14bca9248d7fa6e3f1a066badd87_f2736aea2d26c18ce7354318694b12b8" /> -->
+                        <div class="e_add">
+                            <div class="e_add_tit">会员登录 <a href="http://buy.modernsky.com/index.php/Login/reg.html"> / 新用户注册</a></div>
+                            <div class="e_add_one">
+                                <div class="e_add_l">手机/信箱：</div>
+                                <div class="e_add_m"><input name="account" type="text"></div>
+                                <div class="e_add_r" id="account">请输入有效手机号或信箱</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="e_add_one">
+                                <div class="e_add_l">密码：</div>
+                                <div class="e_add_m"><input name="password" type="password"></div>
+                                <div class="e_add_r" id="password">密码由8-20位数字或英文组成</div>
+                                <div class="clear"></div>
+                            </div>
+							<div class="e_add_one">
+                                <div class="e_add_l"></div>
+                                <div class="e_add_m"><a href="http://buy.modernsky.com/index.php/Login/findpsw.html">忘记密码？</a></div>
+                                <div class="clear"></div>
+                            </div>
+							
+                            <input type="submit" value="登录" class="e_inp">
+
+							<div class="e_add_one login_qt">您可以用合作伙伴账号登录：<a href="javascript:oauthlogin(&#39;3&#39;);" class="sina">新浪</a></div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    
+
+
+<script type="text/javascript">
+    //多平台登录
+    function oauthlogin(oauth_id){
+        $.getJSON('/index.php/?m=Login&a=oauth_login',{id:oauth_id,callback:""},function(content){
+            if(content.isError == false){
+                window.location.href = content.url;
+            }
+            else{
+                alert(content.message);
+            }
+        });
+    }
+</script>
+
+
+
+<!--导入底部-->
+<div id="footer">
+    <div class="content">
+        <div class="colored">
+            <div class="colored_1">
+                <div class="violet">
+                </div>
+                <div class="red">
+                </div>
+                <div class="orange">
+                </div>
+                <div class="yellow">
+                </div>
+                <div class="green">
+                </div>
+            </div>
+            <div class="colored_2">
+                <div class="violet">
+                </div>
+                <div class="red">
+                </div>
+                <div class="orange">
+                </div>
+                <div class="yellow">
+                </div>
+                <div class="green">
+                </div>
+            </div>
+            <div class="colored_3">
+                <div class="violet">
+                </div>
+                <div class="red">
+                </div>
+                <div class="orange">
+                </div>
+                <div class="yellow">
+                </div>
+                <div class="green">
+                </div>
+            </div>
+        </div>
+
+        <div class="map">
+            <div class="qrcode">
+                <img src="./摩登天空 Modernsky_files/qrcode_180.png">
+            </div>
+            <div class="Message">
+                <img src="./摩登天空 Modernsky_files/title_contact.png">
+                <ul>
+                    <li>
+                        <img src="./摩登天空 Modernsky_files/icon_location_b.png">
+                        <p>北京市朝阳区广渠路1号创1958园区3-12 摩登天空</p>
+                    </li>
+                    <li>
+                        <img src="./摩登天空 Modernsky_files/icon_tel_b.png">
+                        <p>电话：（8610）010-50972785</p>
+                        <p>客服咨询热线：4001-680-650</p>
+                        <p>唱片发行：（8610）010-50972785-6012</p>
+    					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;音乐节项目合作：（8610）010-50972785-6013</p>
+                    </li>
+                    <!--
+                    <li>
+                        <img src="/Index/Public/img/icon/icon_mail_b.png">
+                        <p style="margin-top:8px;"><u><a href="">info@modernsky.com</a></u></p>
+                    </li>
+                    -->
+                </ul>
+            </div>
+          <!--  <div class="partner">
+                <img src="/Index/Public/img/title/title_partners.png">
+				<p><a href="">22院街艺术区</a></p>
+                <p><a href="">上海新娱乐</a></p>
+                <p><a href="">草壳</a></p>
+                <p><a href="">天空印象</a></p>
+                <p><a href="">通州运河公园</a></p>
+				
+            </div>-->
+            <div class="about">
+                <img src="./摩登天空 Modernsky_files/about.png">
+                <p><a href="http://buy.modernsky.com/index.php/About/index/id/3.html">关于摩登</a></p>
+                <p><a href="http://buy.modernsky.com/index.php/About/index/id/5.html">联系我们</a></p>
+                <p><a href="http://buy.modernsky.com/index.php/About/index/id/4.html">法律条款</a></p>
+                <p><a href="http://buy.modernsky.com/index.php/About/index/id/6.html">加入我们</a></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="copyright">
+    <div class="content">
+        <div class="left">
+
+            <p>©1997-2014　<span>摩登天空</span> 版权所有　<span>Modernsky</span> Entertainment CO.,LTD.　All Copyright Reserved　京ICP备14018992号-1</p>
+        </div>
+        <div class="right">
+            <p>Designed &amp; Powered　by <span>Sky</span>mirror</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?54a243acae1208d74609b26b69e5f4e7";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+</body></html>

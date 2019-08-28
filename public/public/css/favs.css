@@ -1,0 +1,106 @@
+/* 收藏演出 */
+h2{
+  font: 13px/1.5 'Microsoft YaHei',"\5b8b\4f53";
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+}
+.userRight{
+  width: 830px;
+  color: #333;
+  margin-left:100px;
+  margin-top:60px;
+}
+.userTitle{
+  border-bottom: 1px solid #eee;
+  height: 50px;
+  display:flex;
+}
+.justify {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.g-list-wrap{
+  width:100%; 
+  height:auto;
+  /* border:1px solid #f00; */
+}
+.g-list-wrap{
+  width:100%; 
+  /* border:1px solid #f00; */
+  list-style:none;
+  display:flex;
+  /* justify-content: space-between; */
+  text-align:justify;
+  flex-wrap: wrap;
+  align-items: right;
+}
+.g-list-wrap>li{
+  width:195px; 
+  height:430px;
+  border:1px solid #eee;
+  margin-bottom:30px;
+  margin-right:5px;
+}
+.g-list-wrap>li>a{
+  text-decoration:none;
+  display:block;
+  width:195px; 
+  height:430px;
+  box-sizing:border-box;
+  border: 1px #ddd solid;
+  border-radius: 4px;
+  padding: 10px;
+  color:#666666;
+  font-size:13px;
+}
+.g-list-wrap>li>a>div{
+  text-align: center;
+  height: 255px;
+  /* border:1px solid #f00; */
+}
+.g-list-wrap>li>a>div>img{
+  width:100%;
+  height:100%;
+}
+.g-list-wrap>li>a>p/* :not(first-child)*/{ 
+  padding:0;
+  margin:0;
+  height:19px;
+  color: #666;
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.g-list-wrap>li>a>p.gTitle{
+  width:100%;
+  margin-top: 15px;
+  height: 38px;
+  line-height: 19px;
+  overflow: hiddle;
+  white-space: pre-wrap;
+}
+.g-list-wrap>li>a:hover>p.gTitle{
+  color:#e72f2f;
+}
+.g-list-wrap>li>a>p.gPrice>b{
+  font-weight: bold;
+  color:#e72f2f;
+}
+.g-list-wrap>li>a>p.gPlace>span{
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  background: url(/images/index/icon.png) 0 -343px no-repeat;
+}
+.g-list-wrap>li>a>p.gPlace{
+  color:#37a;
+}
+#collect{
+  display:none;
+}

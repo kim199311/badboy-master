@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+  <header id="header"> 
+  </header>
+  <section>
+    <div class="ucmain">
+      <div class="auto-width clearfix">
+      <div class="userLeft">
+        <div class="photobox">
+          <div class="photo">
+            <img src="image/index/default-photo.png" alt="">
+          </div>
+        </div>
+        <div class="userNav">
+          <dl>
+            <dt>我的资料</dt>
+            <dd>
+              <a href="">
+                <i class="icon10"></i>我的资料
+              </a>
+            </dd>
+            <dd>
+              <a href="">
+                <i class="icon11"></i>收藏的演出
+              </a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>订单相关</dt>
+            <dd>
+              <a href="">
+                <i class="icon12"></i>演出订单
+              </a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="userRight" id="info">
+        <div class="userTitle mt60 clearfix">
+          <h2>我的资料</h2>
+          <p class="comple">资料完整度</p>
+          <div class="progress">
+            <div class="progressbar" style="width:100%"></div>
+          </div>
+          <p class="collagen">100%</p>
+        </div>
+        <div class="tablebox mt50">
+          <form action="" methods="post" id="infoForm" >
+            <div class="infoHead clearfix">
+              <div class="infoTitle">当前对象：</div>
+              <div class="infoCont">
+                <div class="myPhoto">
+                  <div class="wrapPhoto">
+                    <img src="image/index/default-photo.png" alt="" class="errImg">
+                    <div class="s-uploader">
+                      <ul class="img-upload-list"></ul>
+                      <div class="imgUpload" style="position:relative;overflow:hidden;">
+                        <span></span>
+                        <input type="file" name="userPicture" style="cursor:pointer;position:absolute;opacity:0;filter:alpha(opacity=0);left:-10px;top:-10px;background:#fff;font-size:900px;border:0;width:400px;height:200px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="uploadText">点击上传头像</span>
+            </div>
+            <div class="ctrlItem">
+              <p class="ctrlItem-l">昵称：</p>
+              <p class="ctrlItem-r">
+                <input type="text" name="uname" class="iptText" id="username" required="true" placeholder="昵称" autocomplete="off">
+              </p>
+            </div>
+            <div class="ctrlItem">
+              <p class="ctrlItem-l">性别：</p>
+              <p class="ctrlItem-r feldSex">
+                <label class="feld">
+                  <input type="radio" name="sex" value="1">
+                  <span class="i_name">男</span>
+                </label>
+                <label class="feld">
+                  <input type="radio" name="sex" value="0">
+                  <span class="i_name">女</span>
+                </label>
+              </p>
+            </div>
+            <div class="ctrlItem">
+              <p class="ctrlItem-l">真实姓名：</p>
+              <p class="ctrlItem-r">
+                <input type="text" name="rname" class="iptText" id="rname" required="true" placeholder="真实姓名" autocomplete="off">
+              </p>
+            </div>
+            <div class="ctrlItem">
+              <p class="ctrlItem-l">邮箱：</p>
+              <p class="ctrlItem-r">
+                <input type="email" name="email" class="iptText" id="email" required="true" placeholder="邮箱" autocomplete="off">
+              </p>
+            </div>
+            <div class="ctrlItem">
+              <p class="ctrlItem-l">手机号：</p>
+              <p class="ctrlItem-r">
+                <input type="text" name="phone" class="iptText" id="uphone" required="true" placeholder="手机号" autocomplete="off">
+              </p>
+            </div>
+            <div class="ctrlItem">
+              <p class="ctrlItem-l">星座：</p>
+              <p class="ctrlItem-r">
+                <select name="selectStar" id="selectStar" class="iptText">
+                  <option  value="0" selected="selected"  >白羊座</option>
+                  <option  value="1">金牛座</option>
+                  <option  value="2">双子座</option>
+                  <option  value="3">巨蟹座</option>
+                  <option  value="4">狮子座</option>
+                  <option  value="5">处女座</option>
+                  <option  value="6">天秤座</option>
+                  <option  value="7">天蝎座</option>
+                  <option  value="8">射手座</option>
+                  <option  value="9">摩羯座</option>
+                  <option  value="10">水瓶座</option>
+                  <option  value="11">双鱼座</option>	
+                </select>
+              </p>
+            </div>
+            <div class="ctrlItem"> 
+              <p class="ctrlItem-l">血型：</p> 
+              <p class="ctrlItem-r"> 
+                <select class="iptText" id="selectBlood" name="selectBlood"> 
+                  <option value="0">A型</option> 
+                  <option value="1">B型</option> 
+                  <option value="2">O型</option> 
+                  <option value="3">AB型</option> 
+                </select>						 
+              </p> 
+            </div>	
+            <div class="ctrlItem">
+              <p class="ctrlItem-l">&nbsp;</p> 
+              <p class="ctrlItem-r">
+                <button class="submitBtn">确定修改</button>
+              </p> 
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="userRight" id="collect">
+        <div class="userTitle mt60 clearfix">
+          <h2>收藏的演出</h2>
+        </div>
+        <ul class="g-list-wrap justify mt30">
+          <li>
+            <a href="">
+              <div>
+                <img src="image/live/nlive01.jpg" alt="">
+              </div>
+              <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+              <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+              <p class="gPrice">
+                价格：<b>¥480-1180</b> 
+              </p>
+              <p class="gTime">时间：2019/06/15 14:30</p>
+              <p class="gPlace">
+                <span></span>
+                [北京]北京 世纪剧院
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <img src="image/live/nlive01.jpg" alt="">
+              </div>
+              <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+              <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+              <p class="gPrice">
+                价格：<b>¥480-1180</b> 
+              </p>
+              <p class="gTime">时间：2019/06/15 14:30</p>
+              <p class="gPlace">
+                <span></span>
+                [北京]北京 世纪剧院
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <img src="image/live/nlive01.jpg" alt="">
+              </div>
+              <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+              <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+              <p class="gPrice">
+                价格：<b>¥480-1180</b> 
+              </p>
+              <p class="gTime">时间：2019/06/15 14:30</p>
+              <p class="gPlace">
+                <span></span>
+                [北京]北京 世纪剧院
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <img src="image/live/nlive01.jpg" alt="">
+              </div>
+              <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+              <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+              <p class="gPrice">
+                价格：<b>¥480-1180</b> 
+              </p>
+              <p class="gTime">时间：2019/06/15 14:30</p>
+              <p class="gPlace">
+                <span></span>
+                [北京]北京 世纪剧院
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <img src="image/live/nlive01.jpg" alt="">
+              </div>
+              <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+              <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+              <p class="gPrice">
+                价格：<b>¥480-1180</b> 
+              </p>
+              <p class="gTime">时间：2019/06/15 14:30</p>
+              <p class="gPlace">
+                <span></span>
+                [北京]北京 世纪剧院
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <img src="image/live/nlive01.jpg" alt="">
+              </div>
+              <p class="gTitle">【聚橙】世界经典法语音乐剧《罗密欧与朱丽叶》--北京站</p>
+              <p class="gName">艺人：音乐剧《罗密欧与朱丽叶》剧组</p>
+              <p class="gPrice">
+                价格：<b>¥480-1180</b> 
+              </p>
+              <p class="gTime">时间：2019/06/15 14:30</p>
+              <p class="gPlace">
+                <span></span>
+                [北京]北京 世纪剧院
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="userRight" id="order">
+        <div class="userTitle mt60 clearfix">
+          <h2>我的订单</h2>
+        </div>
+        <ul class="tabs-wrap mt20 clearfix">
+          <li>
+            <a href="" class="current">全部订单</a>
+          </li>
+          <li>
+            <a href="">已支付订单</a>
+          </li>
+          <li>
+            <a href="">未支付订单</a>
+          </li>
+        </ul>
+        <div class="tablebox mt20 id="allpay">
+          <table>
+            <tbody>
+              <tr>
+                <th class="first">演出名称</th>
+                <th class="second">演出场地</th>
+                <th class="third">票数</th>
+                <th class="four">单价</th>
+                <th class="fifth">总计</th>
+                <th class="sixth">订单状态</th>
+                <th calss="seventh">操作</th>
+              </tr>
+            </tbody>
+          </table>
+          <div class="orderlist">
+            <p>
+              订单号
+              <span class="d_gray m_r30">xdyc180585913531</span>
+              <span class="m_r30">下单时间：2019-06-11 23:15:36</span>
+              <span>取票信息：电子票</span>
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="first pad20">
+                    <h5>
+                      <a href="">日本 Jazz Hip-hop 艺术家 NOMAK 2019新专辑《Phenomenal Love》巡演 北京站</a>
+                    </h5>
+                  </td>
+                  <td class="second bule">
+                      <a href="">[北京]MAO Livehouse北京</a>
+                    </td>
+                  <td class="third">
+                    预售票
+                    <br>
+                    x1
+                  </td>
+                  <td class="four">
+                    ¥150
+                  </td>
+                  <td class="fifth">
+                    ¥150
+                  </td>
+                  <td class="sixth">
+                    未支付
+                  </td>
+                  <td class="seventh noboder">
+                    <a href="" class="a-link">订单详情</a><br>
+                    <a href="" class="del_list mt5 block">删除订单</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="orderlist">
+            <p>
+              订单号
+              <span class="d_gray m_r30">xdyc180585913531</span>
+              <span class="m_r30">下单时间：2019-06-11 23:15:36</span>
+              <span>取票信息：电子票</span>
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="first pad20">
+                    <h5>
+                      <a href="">日本 Jazz Hip-hop 艺术家 NOMAK 2019新专辑《Phenomenal Love》巡演 北京站</a>
+                    </h5>
+                  </td>
+                  <td class="second bule">
+                      <a href="">[北京]MAO Livehouse北京</a>
+                    </td>
+                  <td class="third">
+                    预售票
+                    <br>
+                    x1
+                  </td>
+                  <td class="four">
+                    ¥150
+                  </td>
+                  <td class="fifth">
+                    ¥150
+                  </td>
+                  <td class="sixth">
+                    未支付
+                  </td>
+                  <td class="seventh noboder">
+                    <a href="" class="a-link">订单详情</a><br>
+                    <a href="" class="del_list mt5 block">删除订单</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer id="footer"></footer>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>
